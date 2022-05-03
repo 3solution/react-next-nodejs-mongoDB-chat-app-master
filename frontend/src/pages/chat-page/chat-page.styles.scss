@@ -1,0 +1,92 @@
+.chat-page {
+    width: 100vw;
+
+    .site-page-header {
+        padding: 1vh 10vw;
+        border: 1px solid rgb(235, 237, 240);
+
+        .ant-page-header-heading-sub-title {
+            text-transform: capitalize;
+        }
+    }
+
+    .messages-layout {
+        width: 100vw;
+        margin: 0vh;
+        background-color: #fff;
+
+        .messages-div {
+            padding: 2vh 2vw;
+            max-height: 50vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            &::-webkit-scrollbar {
+                width: 0;  /* Remove scrollbar space */
+                background: transparent;  /* Optional: just make scrollbar invisible */
+            }
+        }
+
+        .message-ours {
+            border: none;
+            text-align: right;
+        }
+
+        .message-other {
+            border: none;
+            text-align: left;
+        }
+    }
+
+    .form {
+        margin-top: 1vh;
+        width: 50vw;
+        position: relative;
+        left: 25vw;
+
+        .chat-input {
+            position: relative;
+            top: 6vh;
+        }
+    }
+
+    .users-list {
+        max-height: 50vh;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 0;  /* Remove scrollbar space */
+            background: transparent;  /* Optional: just make scrollbar invisible */
+        }
+    }
+}
+
+.trigger {
+    padding: 0 2vw;
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.trigger:hover {
+    color: #1890ff;
+}
+
+.logo {
+    height: 0;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    margin-bottom: 10vh;
+}
+
+.site-layout .site-layout-background {
+    background: #fff;
+}
+
+.ant-layout-sider-children{
+
+    .ant-menu-item {
+        text-transform: capitalize;
+    }
+}

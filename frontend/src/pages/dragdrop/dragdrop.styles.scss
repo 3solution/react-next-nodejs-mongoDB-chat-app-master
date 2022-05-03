@@ -1,0 +1,78 @@
+.drag-drop-page {
+    width: 100vw;
+    height: 100vh;
+
+    .container-drag {
+        text-align: center;
+    }
+
+    .wip {
+        position: absolute;
+        width: 35vw;
+        height: 100vh;
+        padding: 0 1vw;
+        right: 0;
+        top: 10;
+        background-color: #2D2D2D;
+        border-right: 1px dotted;
+    
+        h2 {
+            color: #fff;
+            margin: 2vh 0 4vh 0;
+            text-align: left;
+        }
+    }
+
+    .header {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        background-color: #E0E0E0;
+        width: 100%;
+    }
+
+    .task-header {
+        display: inline-block;
+        background-color: skyblue;
+        width: 100%;
+    }
+
+    .droppable {
+        position: absolute;
+        width: 65vw;
+        height: 100vh;
+        left: 0;
+        top: 10;
+        background-color: #E5E5E5;
+        background-image: url('../../images/slide.png');
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        border-left: 1px dotted;
+    }
+
+    .draggable {
+        width: auto;
+        height: auto;
+        text-align: left;
+        margin: 5px auto;
+        margin-bottom: 1.5vh;
+        padding: 1vh .4vw;
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        border: 0;
+        cursor: grab;
+
+        &:active {
+            cursor: grabbing;
+        }
+    }
+
+    .selected {
+        border: 3px solid red;
+    }
+
+    .modalInputs {
+        margin-bottom: 20px;
+    }
+}

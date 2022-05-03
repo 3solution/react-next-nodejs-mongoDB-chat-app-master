@@ -1,0 +1,27 @@
+.login-page {
+    width: 100vw;
+
+    .site-page-header {
+        padding: 3vh 10vw;
+        border: 1px solid rgb(235, 237, 240);
+    }
+    
+    .form {
+        margin-top: 20vh;
+        width: 50vw;
+        position: relative;
+        left: 25vw;
+
+        .email-input {
+            margin-bottom: 4vh;
+        }
+
+        .password-input {
+            margin-bottom: 8vh;
+        }
+
+        .register-link {
+            margin-bottom: 4vh;
+        }
+    }
+}

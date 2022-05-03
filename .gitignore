@@ -1,0 +1,46 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+#FRONTEND
+
+# dependencies
+/frontend/node_modules
+/frontend/.pnp
+/frontend.pnp.js
+
+# testing
+/frontend/coverage
+
+# production
+/frontend/build
+
+# misc
+/frontend/.DS_Store
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+/frontend/src/config
+/frontend/.netlify/
+
+# BACKEND
+
+# Dependencies
+/backend/node_modules
+
+# package-lock.json (use yarn.lock instead)
+/backend/package-lock.json
+
+# yarn error logs
+/backend/yarn-error.log
+
+# Environment varibales
+/backend/.env*
+/backend/!.env*.example
+
+# Code coverage
+/backend/coverage

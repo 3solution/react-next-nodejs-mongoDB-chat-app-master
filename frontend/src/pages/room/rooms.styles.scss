@@ -1,0 +1,45 @@
+.room-page {
+
+    .content {
+        width: 80vw;
+        margin-left: 10vw;
+        margin-top: 10vh;
+    
+        .rooms-collection {
+            
+            .rooms {
+                display: inline-block;
+                margin-right: 1vw;
+                width: 26vw;
+                border: 2px solid #bbb;
+                color: #bbb;
+                height: 16vh;
+                line-height: 16vh;
+                margin-bottom: 2vh;
+                transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+                transition-duration: .4s;
+                transition-delay: .1s;
+                font-size: 2em;
+                text-align: center;
+
+                &:nth-child(3n + 0) {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+                    transition-duration: .4s;
+                    transition-delay: .1s;
+                    border: 2px solid #444;
+                    color: #444;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .inputs-div {
+            margin-top: 10vh;
+        }
+    }
+}
